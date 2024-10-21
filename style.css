@@ -1,0 +1,37 @@
+body {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.zoom-in-out-box {
+    margin: 24px;
+    width: 50px;
+    height: 50px;
+    background: #00f552;
+    animation: zoom-in-zoom-out 1s ease infinite;
+    text-align: center;
+    align-content: center;
+    color: rgb(22, 22, 80);
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.zoom-in-out-box::first-letter {
+    color: white;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.5, 1.5);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
